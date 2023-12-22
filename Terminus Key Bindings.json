@@ -1,5 +1,6 @@
 [
-	// Toggle Terminus panel (at the bottom of the screen) Open/Closed when Alt+' is pressed
+	// Toggle Terminus panel (at the bottom of the screen)
+	// Press Alt+' to Open/Close
 	{
 		// The key press to look out for
 		"keys": ["alt+`"],
@@ -8,7 +9,7 @@
 		"command": "toggle_terminus_panel"
 	},
 
-	// Open cmd.exe Command Prompt when Ctrl+Alt+T is pressed
+	// Press Ctrl+Alt+T to open Command Prompt
 	{
 		// The key press to look out for
 		"keys": ["ctrl+alt+t"],
@@ -29,7 +30,7 @@
         }
 	},
 
-	// Open powershell.exe PowerShell when Ctrl+Alt+P is pressed
+	// Press Ctrl+Alt+P to open Windows PowerShell
 	{
 		"keys": ["ctrl+alt+p"],
 		"command": "terminus_open",
