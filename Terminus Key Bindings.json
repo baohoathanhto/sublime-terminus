@@ -1,0 +1,42 @@
+[
+	// Toggle Terminus panel (at the bottom of the screen) Open/Closed when Alt+' is pressed
+	{
+		// The key press to look out for
+		"keys": ["alt+`"],
+
+		// Toggle the panel
+		"command": "toggle_terminus_panel"
+	},
+
+	// Open cmd.exe Command Prompt when Ctrl+Alt+T is pressed
+	{
+		// The key press to look out for
+		"keys": ["ctrl+alt+t"],
+
+		// Tell terminus to open something
+		"command": "terminus_open",
+
+		// Tell terminus what to open
+		"args" : {
+			// Open Command Prompt
+         	"cmd": "cmd.exe",
+
+         	// Provide Command Prompt with Current Working Directory
+            "cwd": "${file_path:${folder}}",
+
+            // Tell terminus to put it in the panel at the bottom of the screen
+            "panel_name": "Terminus"
+        }
+	},
+
+	// Open powershell.exe PowerShell when Ctrl+Alt+P is pressed
+	{
+		"keys": ["ctrl+alt+p"],
+		"command": "terminus_open",
+         "args" : {
+         	"cmd": "powershell.exe",
+            "cwd": "${file_path:${folder}}",
+            "panel_name": "Terminus"
+         }
+	},
+]
